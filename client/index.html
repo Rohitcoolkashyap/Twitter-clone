@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="”robots”" content="”index," follow” />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <header>
+      <h1>Twitter clone</h1>
+    </header>
+    <main>
+      <div class="login-box">
+        <form>
+          <div class="user-box">
+            <input type="text" id="name" name="name" required="" />
+            <label for="name">Username</label>
+          </div>
+          <div class="user-box">
+            <textarea
+              type="password"
+              id="content"
+              name="content"
+              required=""
+            ></textarea>
+            <label for="content">Message</label>
+          </div>
+          <button>
+            <span></span>
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            Submit
+          </button>
+        </form>
+        <div class="loading">
+          <img src="./loading.gif" alt="loading!" />
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="tweet"></div>
+    </section>
+
+    <script src="./client.js"></script>
+  </body>
+</html>

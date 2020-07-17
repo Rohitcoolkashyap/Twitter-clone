@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  text-align: center;
+}
+
+.login-box {
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  max-width: 400px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+
+  border: none;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input,
+textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.login-box .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  max-width: 100%;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.login-box button:hover {
+  background: #03e9f4;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #043538, 0 0 25px #0a5053, 0 0 50px #064246,
+    0 0 100px #03e9f4;
+}
+
+.loading {
+  text-align: center;
+}
+
+div.tweet {
+  margin-top: 400px;
+  text-align: center;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  justify-content: end;
+  align-content: space-evenly;
+
+  justify-content: center;
+}
+.tweet > div {
+  background-color: hsl(0, 0%, 95%);
+  margin-bottom: 10px;
+
+  border-bottom: 2px light black;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.tweet > div h3 {
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -0.1rem;
+}
+
+.tweet > div p {
+  margin-top: 3px;
+  padding: 20px;
+}
